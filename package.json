@@ -1,17 +1,24 @@
 {
+  "homepage" : "https://sudhanshu-soni15.github.io/Basic-React-App-/",
+
   "name": "react-essentials-start",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+   
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
     "preview": "vite preview"
   },
+
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.0",
+    "gh-pages": "^6.3.0",
     "vite": "^4.3.9"
   },
   "keywords": [],
